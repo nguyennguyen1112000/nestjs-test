@@ -1,0 +1,36 @@
+POST http://localhost:3000/students HTTP/1.1
+content-type: application/json
+
+{
+       "LastName": "Diêu",
+        "FirstName": "Lê Thị",
+        "Age": 17,
+        "Birthday": "08/22/2004"
+}
+###
+GET http://localhost:3000/students HTTP/1.1
+content-type: application/json
+### Sign Up
+POST http://localhost:3000/auth/signUp HTTP/1.1
+content-type: application/json
+
+{
+       "username": "user01",
+       "password": "SuperSecretP4www0"
+}
+### Sign In
+POST http://localhost:3000/auth/signIn HTTP/1.1
+content-type: application/json
+
+{
+       "username": "user01",
+       "password": "SuperSecretP4www0"
+}
+### Auth
+POST http://localhost:3000/auth/test HTTP/1.1
+content-type: application/json
+
+{
+       "username": "user01",
+       "password": "SuperSecretP4www0"
+}
